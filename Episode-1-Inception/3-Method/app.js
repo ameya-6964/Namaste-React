@@ -1,4 +1,8 @@
-const heading = React.createElement("h1", {}, "Hello World From React");
+const heading = React.createElement(
+  "h1",
+  { id: "heading" },
+  "Hello World From React"
+);
 // - Creates an <h1> element
 // - No additional attributes (empty object {})
 // - The text content is set to "Hello World From React"
