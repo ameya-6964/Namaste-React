@@ -11,7 +11,7 @@ _Link to my Code_ https://github.com/ameya-6964/Namaste-React/tree/main/Episode-
 - **What is crossorigin in script tag?**
 - **What is the difference between React and ReactDOM**
 - **What is the difference between react.development.js and react.production.js files via CDN?**
-- **What is async and defer?** - see my Youtube video ;)
+- **What is async and defer?**
 
 ## Coding
 
