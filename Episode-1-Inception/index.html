@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Create a new heading element (<h1>)
+      const heading = document.createElement("h1");
+
+      // Set the text content of the heading
+      heading.innerText = "Hello World From JavaScript";
+
+      // Get a reference to the "root" element in the HTML document
+      const root = document.getElementById("root");
+
+      // Append the heading element as a child of the "root" element
+      root.appendChild(heading);
+    </script>
+  </body>
+</html>
