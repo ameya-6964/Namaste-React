@@ -20,5 +20,13 @@ const JsxHeading = <h1 id="parent">Namaste React Using JSX 🚀</h1>;
   */
 }
 
+const HeadingComponent = () => {
+  return (
+    <h1 id="parent" tabIndex="3">
+      Namaste React From Functional Component
+    </h1>
+  );
+};
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(JsxHeading);
