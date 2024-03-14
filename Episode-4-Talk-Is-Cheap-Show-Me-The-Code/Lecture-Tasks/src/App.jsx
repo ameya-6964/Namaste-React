@@ -1,6 +1,6 @@
 import "./App.css";
 
-function App({ titlr }) {
+function App() {
   return (
     <>
       <h1>Hello World</h1>
