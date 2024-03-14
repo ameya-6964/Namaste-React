@@ -1,14 +1,20 @@
 .navbar {
   display: flex;
+  height: 10vh;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(90deg, #f9c929, #f9a61d);
-  padding: 1rem;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid black;
 }
 
 .logo {
-  font-size: 1.5rem;
-  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .logo img {
@@ -16,23 +22,134 @@
   height: 50px;
 }
 
-.nav-links {
-  list-style-type: none;
+.logo-span {
+  color: white;
+  font-size: 2rem;
+}
+
+.nav-items {
+  width: 600px;
+  font-size: 1.5rem;
   display: flex;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+}
+
+.nav-items li {
+  list-style: none;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.body {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
-.nav-links li {
-  margin-right: 1rem;
+.card {
+  height: 350px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 2rem;
+  background-color: rgb(202, 206, 211);
 }
 
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5rem; /* Adjust font size as needed */
-  transition: color 0.3s ease; /* Smooth transition for color change */
+/* Your CSS file */
+
+.search {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  margin-left: 2rem;
+  justify-content: flex-start;
 }
 
-.nav-links li a:hover {
-  color: #ffd700; /* Change color on hover */
+.search__input {
+  width: 40%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Style for placeholder text */
+.search__input::placeholder {
+  color: #999; /* Adjust as needed */
+}
+
+/* Style for input when focused */
+.search__input:focus {
+  border-color: #007bff; /* Adjust color for focus state */
+}
+
+.search__button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff; /* Adjust background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Style for button when hovered */
+.search__button:hover {
+  background-color: #0056b3; /* Adjust hover background color */
+}
+
+/* Style for button when focused */
+.search__button:focus {
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Adjust focus outline */
+}
+
+.buttons {
+  margin-left: auto;
+  display: flex;
+  margin-right: 5rem;
+  gap: 2rem;
+}
+
+.top {
+  padding: 0.5rem 1rem;
+  background-color: #178900; /* Adjust background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.reset {
+  padding: 0.5rem 1rem;
+  background-color: #cb0404; /* Adjust background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Style for button when hovered */
+.top:hover {
+  background-color: #23ae1f; /* Adjust hover background color */
+}
+
+/* Style for button when hovered */
+.reset:hover {
+  background-color: #ef3737; /* Adjust hover background color */
 }
