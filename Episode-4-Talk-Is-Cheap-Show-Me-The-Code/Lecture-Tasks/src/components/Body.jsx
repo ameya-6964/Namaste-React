@@ -1,3 +1,5 @@
+import RestaurantCard from "./RestaurantCard";
+
 const Body = () => {
   return (
     <div>
@@ -16,14 +18,18 @@ const Body = () => {
       </div>
       <div className="body">
         <div className="container">
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
+          <RestaurantCard />
+          <RestaurantCard />
+          <RestaurantCard />
+          <RestaurantCard />
+          <RestaurantCard />
+          <RestaurantCard />
+          <RestaurantCard />
+          <RestaurantCard />
+          <RestaurantCard />
+          <RestaurantCard />
+          <RestaurantCard />
+          <RestaurantCard />
         </div>
       </div>
     </div>
