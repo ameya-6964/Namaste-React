@@ -73,7 +73,7 @@
 }
 
 .card {
-  min-height: 400px;
+  max-height: 480px;
   width: 300px;
   border: 1px solid black;
   border-radius: 2rem;
@@ -174,7 +174,8 @@
 }
 
 .card--items h1 {
-  font-size: xx-large;
+  font-size: x-large;
+  text-align: left;
 }
 
 .card--items {
@@ -198,13 +199,18 @@
 .rating-green {
   padding: 0.2rem 0.75rem;
   background-color: #178900;
-  color: gold;
+  color: white;
   border-radius: 1rem;
+  text-align: center;
 }
 
 .cuisines {
   margin-top: 1rem;
+  text-align: center;
   font-weight: lighter;
+}
+.cuisines h4 {
+  font-size: larger;
 }
 
 .cost {
@@ -224,4 +230,24 @@
   padding: 1rem 0;
   display: flex;
   justify-content: space-around;
+}
+
+.cuisine-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0.25rem;
+}
+
+.cuisine-item {
+  margin-right: 0.5rem; /* Added margin between cuisine items */
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #f0f0f0;
+  border-radius: 0.25rem;
+  display: inline-block;
+  transition: background-color 0.3s ease; /* Added transition for hover effect */
+}
+
+.cuisine-item:hover {
+  background-color: #ddd; /* Changed background color on hover */
 }

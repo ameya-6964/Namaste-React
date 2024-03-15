@@ -1,4 +1,5 @@
 import RestaurantCard from "./RestaurantCard";
+import { restaurants } from "../data/data.js";
 
 const Body = () => {
   return (
@@ -18,14 +19,9 @@ const Body = () => {
       </div>
       <div className="body">
         <div className="container">
-          <RestaurantCard />
-          <RestaurantCard />
-          <RestaurantCard />
-          <RestaurantCard />
-          <RestaurantCard />
-          <RestaurantCard />
-          <RestaurantCard />
-          <RestaurantCard />
+          {restaurants.map((restaurant) => (
+            <RestaurantCard key={restaurant.id} data={restaurant} />
+          ))}
         </div>
       </div>
     </div>
