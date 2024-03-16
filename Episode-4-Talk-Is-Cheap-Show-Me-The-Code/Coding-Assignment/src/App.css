@@ -1,0 +1,261 @@
+.header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navigation ul li {
+  margin-right: 20px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.cart {
+  padding: 10px 20px;
+  background-color: #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+}
+
+.body {
+  width: 100%;
+  min-height: calc(100vh - 10vh); /* Adjusted for navbar height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  margin-top: 2rem;
+  min-height: 100vh; /* Adjusted for navbar height */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.card {
+  max-height: 480px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 2rem;
+  background-color: rgb(216, 220, 226);
+  transition: all ease 0.5s;
+}
+
+.card:hover {
+  background-color: rgb(187, 195, 208);
+  cursor: pointer;
+}
+
+.search {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  margin-left: 2rem;
+  justify-content: flex-start;
+}
+
+.search__input {
+  width: 40%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search__input::placeholder {
+  color: #999;
+}
+
+.search__input:focus {
+  border-color: #007bff;
+}
+
+.search__button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.search__button:hover {
+  background-color: #0056b3;
+}
+
+.search__button:focus {
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.buttons {
+  margin-left: auto;
+  display: flex;
+  margin-right: 5rem;
+  gap: 2rem;
+}
+
+.top,
+.reset {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.top {
+  background-color: #178900;
+  color: #fff;
+}
+
+.reset {
+  background-color: #cb0404;
+  color: #fff;
+}
+
+.top:hover {
+  background-color: #23ae1f;
+}
+
+.reset:hover {
+  background-color: #ef3737;
+}
+
+.card img {
+  width: 100%;
+  padding: 0.5rem;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.card--item__name {
+  width: 100%;
+}
+
+.card--items h1 {
+  font-size: x-large;
+  text-align: center;
+}
+
+.card--items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+}
+
+.card--items__rating {
+  margin-top: 1rem;
+  margin-left: 40px;
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1rem;
+  gap: 1rem;
+}
+
+.rating-green {
+  padding: 0.2rem 0.75rem;
+  background-color: #178900;
+  color: white;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.cuisines {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: lighter;
+}
+.cuisines h4 {
+  font-size: larger;
+}
+
+.cost {
+  margin-top: 1rem;
+}
+
+.card--items h5 {
+  font-size: large;
+  font-weight: 300;
+}
+
+.footer {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cuisine-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0.25rem;
+}
+
+.cuisine-item {
+  margin-right: 0.5rem; /* Added margin between cuisine items */
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #f0f0f0;
+  border-radius: 0.25rem;
+  display: inline-block;
+  transition: background-color 0.3s ease; /* Added transition for hover effect */
+}
+
+.cuisine-item:hover {
+  background-color: #ddd; /* Changed background color on hover */
+}
+
+.cost h5 {
+  margin-left: 2.5rem;
+}
