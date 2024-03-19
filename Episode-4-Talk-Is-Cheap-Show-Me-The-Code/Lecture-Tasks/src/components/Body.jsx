@@ -13,8 +13,8 @@ const Body = () => {
         <button className="search__button"> Search Restaurant</button>
 
         <div className="buttons">
-          <button className="top">Top Rated Restaurants</button>
-          <button className="reset"> Reset</button>
+          <button className="buttons__top">Top Rated Restaurants</button>
+          <button className="buttons__reset"> Reset</button>
         </div>
       </div>
       <div className="body">

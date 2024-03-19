@@ -15,7 +15,7 @@
   border: 2px solid black;
 }
 
-.logo {
+.navbar__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,29 +23,26 @@
   padding: 1rem;
 }
 
-.logo img {
+.navbar__logo img {
   width: 50px;
   height: 50px;
 }
 
-.logo-span {
+.navbar__logo-span {
   color: white;
   font-size: 2rem;
 }
 
-.nav-items {
+.navbar__nav-items {
   width: 600px;
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
   padding: 0rem 1rem;
-}
-
-.nav-items li {
   list-style: none;
 }
 
-.nav-items a {
+.navbar__nav-links a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
@@ -135,8 +132,8 @@
   gap: 2rem;
 }
 
-.top,
-.reset {
+.buttons__top,
+.buttons__reset {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
@@ -144,21 +141,21 @@
   outline: none;
 }
 
-.top {
+.buttons__top {
   background-color: #178900;
   color: #fff;
 }
 
-.reset {
+.buttons__reset {
   background-color: #cb0404;
   color: #fff;
 }
 
-.top:hover {
+.buttons__top:hover {
   background-color: #23ae1f;
 }
 
-.reset:hover {
+.buttons__reset:hover {
   background-color: #ef3737;
 }
 
@@ -170,7 +167,7 @@
   border-radius: 2rem;
 }
 
-.card--item__name {
+.card__item__name {
   width: 100%;
 }
 
@@ -179,15 +176,15 @@
   text-align: center;
 }
 
-.card--items {
+.card__items {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   padding: 2rem;
 }
 
-.card--items__rating {
+.card__items__rating {
   margin-top: 1rem;
   margin-left: 40px;
   width: 60%;
@@ -198,7 +195,7 @@
   gap: 1rem;
 }
 
-.rating-green {
+.card__items__rating__value {
   padding: 0.2rem 0.75rem;
   background-color: #178900;
   color: white;
@@ -234,13 +231,13 @@
   justify-content: space-around;
 }
 
-.cuisine-list {
+.cuisines__list {
   list-style-type: none;
   padding: 0;
   margin-top: 0.25rem;
 }
 
-.cuisine-item {
+.cuisines__item {
   margin-right: 0.5rem; /* Added margin between cuisine items */
   margin-bottom: 0.5rem;
   padding: 0.25rem 0.5rem;

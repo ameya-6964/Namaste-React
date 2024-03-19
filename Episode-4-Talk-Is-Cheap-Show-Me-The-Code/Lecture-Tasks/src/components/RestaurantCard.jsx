@@ -3,24 +3,26 @@ const RestaurantCard = ({ data }) => {
   return (
     <div className="card">
       <img src={imageUrl} alt="" />
-      <div className="card--items">
-        <h1 className="card--item__name">{name}</h1>
+      <div className="card__items">
+        <h1 className="card__item__name">{name}</h1>
         <div className="cuisines">
-          <h4>Cuisines</h4>
-          <ul className="cuisine-list">
+          <h4 className="cuisines__title">Cuisines</h4>
+          <ul className="cuisines__list">
             {cuisine.map((cuisineItem, index) => (
-              <li key={index} className="cuisine-item">
+              <li key={index} className="cuisines__item">
                 {cuisineItem}
               </li>
             ))}
           </ul>
         </div>
-        <div className="card--items__rating">
-          <h3>Rating</h3>
-          <span className="rating-green">{rating}</span>
+        <div className="card__items__rating">
+          <h3 className="card__items__rating__title">Rating</h3>
+          <span className="card__items__rating__value rating-green">
+            {rating}
+          </span>
         </div>
         <div className="cost">
-          <h5>Cost : ₹ {cost} / Person</h5>
+          <h5 className="cost__title">Cost : ₹ {cost} / Person</h5>
         </div>
       </div>
     </div>
