@@ -1,5 +1,5 @@
-import RestaurantCard from "./RestaurantCard";
 import { restaurants } from "../data/data.js";
+import RestaurantList from "./RestaurantList.jsx";
 
 const Body = () => {
   return (
@@ -11,7 +11,6 @@ const Body = () => {
           placeholder="Enter Restaurant Name"
         />
         <button className="search__button"> Search Restaurant</button>
-
         <div className="buttons">
           <button className="buttons__top">Top Rated Restaurants</button>
           <button className="buttons__reset"> Reset</button>
@@ -19,9 +18,7 @@ const Body = () => {
       </div>
       <div className="body">
         <div className="container">
-          {restaurants.map((restaurant) => (
-            <RestaurantCard key={restaurant.id} data={restaurant} />
-          ))}
+          <RestaurantList restaurants={restaurants} />
         </div>
       </div>
     </div>
